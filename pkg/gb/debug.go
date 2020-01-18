@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Humpheh/goboy/pkg/debug"
+	"github.com/kil0meters/goboy/pkg/debug"
 )
 
 // LogOpcode is a debug function to log the the current state of the gameboys CPU and next memory.

@@ -3,8 +3,8 @@ package gb
 import (
 	"fmt"
 
-	"github.com/Humpheh/goboy/pkg/apu"
-	"github.com/Humpheh/goboy/pkg/bits"
+	"github.com/kil0meters/goboy/pkg/apu"
+	"github.com/kil0meters/goboy/pkg/bits"
 )
 
 const (

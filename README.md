@@ -1,9 +1,9 @@
 # GoBoy
 
-[![Build Status](https://travis-ci.org/Humpheh/goboy.svg?branch=master)](https://travis-ci.org/Humpheh/goboy)
-[![codecov](https://codecov.io/gh/Humpheh/goboy/branch/master/graph/badge.svg)](https://codecov.io/gh/Humpheh/goboy)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Humpheh/goboy)](https://goreportcard.com/report/github.com/Humpheh/goboy)
-[![GoDoc](https://godoc.org/github.com/Humpheh/goboy?status.svg)](https://godoc.org/github.com/Humpheh/goboy)
+[![Build Status](https://travis-ci.org/kil0meters/goboy.svg?branch=master)](https://travis-ci.org/kil0meters/goboy)
+[![codecov](https://codecov.io/gh/kil0meters/goboy/branch/master/graph/badge.svg)](https://codecov.io/gh/kil0meters/goboy)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kil0meters/goboy)](https://goreportcard.com/report/github.com/kil0meters/goboy)
+[![GoDoc](https://godoc.org/github.com/kil0meters/goboy?status.svg)](https://godoc.org/github.com/kil0meters/goboy)
 
 GoBoy is a multi-platform Nintendo GameBoy and GameBoy Color emulator written in go.
 The emulator can run the majority of GB games and some CGB games. There is also
@@ -19,18 +19,18 @@ step (although will greatly slow down the emulation) and toggling of individual 
 
 ## Installation
 
-Download the [latest release](https://github.com/Humpheh/goboy/releases/latest) of GoBoy from the releases page. 
+Download the [latest release](https://github.com/kil0meters/goboy/releases/latest) of GoBoy from the releases page. 
 
 ### Building from source
 
 With go installed, you can install GoBoy into your go bin by running:
 ```sh
-go get github.com/Humpheh/goboy/cmd/goboy
+go get github.com/kil0meters/goboy/cmd/goboy
 ```
 
 If you have Go 1.11 you can also do:
 ```sh
-git clone https://github.com/Humpheh/goboy.git
+git clone https://github.com/kil0meters/goboy.git
 cd goboy
 go build -o goboy cmd/goboy/main.go
 ```

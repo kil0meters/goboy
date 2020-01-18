@@ -1,6 +1,6 @@
 package gb
 
-import "github.com/Humpheh/goboy/pkg/bits"
+import "github.com/kil0meters/goboy/pkg/bits"
 
 // Button represents the button on a GameBoy.
 type Button byte

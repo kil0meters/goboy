@@ -5,7 +5,7 @@
 	<key>CFBundleExecutable</key>
 	<string>GoBoy</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.humpheh.www</string>
+	<string>com.kil0meters.www</string>
 	<key>CFBundleDisplayName</key>
 	<string>GoBoy</string>
 	<key>CFBundleName</key>

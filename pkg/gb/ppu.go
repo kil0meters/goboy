@@ -1,7 +1,7 @@
 package gb
 
 import (
-	"github.com/Humpheh/goboy/pkg/bits"
+	"github.com/kil0meters/goboy/pkg/bits"
 )
 
 const (

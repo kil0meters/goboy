@@ -19,7 +19,7 @@ cp -R Contents/ ${OUTPUT}/Contents
 # Build GoBoy or copy if argument is passed in
 if [[ $1 == "" ]]; then
     # Build the binary into the contents executable
-    go build -o ${OUTPUT}/Contents/MacOS/GoBoy github.com/Humpheh/goboy/cmd/goboy
+    go build -o ${OUTPUT}/Contents/MacOS/GoBoy github.com/kil0meters/goboy/cmd/goboy
 else
     # Ensure the folder exists
     mkdir -p ${OUTPUT}/Contents/MacOS

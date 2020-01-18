@@ -1,4 +1,4 @@
-module github.com/Humpheh/goboy
+module github.com/kil0meters/goboy
 
 go 1.12
 

@@ -7,7 +7,7 @@ import (
 
 	"math"
 
-	"github.com/Humpheh/goboy/pkg/gb"
+	"github.com/kil0meters/goboy/pkg/gb"
 	"github.com/faiface/pixel"
 	"github.com/faiface/pixel/pixelgl"
 )

@@ -11,11 +11,11 @@ import (
 
 	"fmt"
 
-	"github.com/Humpheh/goboy/dialog"
-	"github.com/Humpheh/goboy/pkg/gb"
-	"github.com/Humpheh/goboy/pkg/gbio"
-	"github.com/Humpheh/goboy/pkg/gbio/iopixel"
 	"github.com/faiface/pixel/pixelgl"
+	"github.com/kil0meters/goboy/dialog"
+	"github.com/kil0meters/goboy/pkg/gb"
+	"github.com/kil0meters/goboy/pkg/gbio"
+	"github.com/kil0meters/goboy/pkg/gbio/iopixel"
 )
 
 // The version of GoBoy
@@ -48,6 +48,8 @@ func main() {
 func start() {
 	// Create the monitor for pixels
 	monitor := iopixel.NewPixelsIOBinding(*vsyncOff || *unlocked)
+
+	go gbio.InitializeInputServer(monitor)
 
 	// Load the rom from the flag argument, or prompt with file select
 	rom := getROM()

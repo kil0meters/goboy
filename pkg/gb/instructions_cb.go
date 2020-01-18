@@ -1,7 +1,7 @@
 package gb
 
 import (
-	"github.com/Humpheh/goboy/pkg/bits"
+	"github.com/kil0meters/goboy/pkg/bits"
 )
 
 func (gb *Gameboy) instRlc(setter func(byte), val byte) {
