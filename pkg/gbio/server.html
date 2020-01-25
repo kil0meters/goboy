@@ -1,0 +1,131 @@
+<html>
+  <script>
+    let ws = new WebSocket("ws://localhost:8080/ws");
+    ws.onmessage = function(event) {
+      updated_key = JSON.parse(event["data"])
+
+      console.log(updated_key);
+
+      try {
+        let pressed_button = document.getElementById(updated_key["pressed_key"])
+        pressed_button.classList.add('pressed')
+      } catch {
+        let released_button = document.getElementById(updated_key["released_key"])
+        released_button.classList.remove('pressed')
+      }
+    }
+  </script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0; 
+    }
+
+    .pressed {
+      background-color: black;
+    }
+
+    #a-button {
+      top: 16px;
+      left: 216px;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      border: 3px black solid;
+      border-radius: 50%;
+    }
+
+    #b-button {
+      top: 32px;
+      left: 164px;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      border: 3px black solid;
+      border-radius: 50%;
+    }
+
+    #start-button {
+      top: 64px;
+      left: 120px;
+      transform: rotate(-25deg); 
+      width: 25;
+      height: 5;
+      border: 3px black solid;
+      border-radius: 10px;
+      position: absolute;
+    }
+    #select-button {
+      top: 64px;
+      left: 86px;
+      transform: rotate(-25deg); 
+      width: 25;
+      height: 5;
+      border: 3px black solid;
+      border-radius: 10px;
+      position: absolute;
+    }
+
+    #dpad-container {
+      display: grid;
+      height: 76px;
+      width: 76px;
+      grid-gap: -10px;
+    }
+
+    #left-button {
+      margin-right: -3px;
+      border: 3px black solid;
+      border-right: 0;
+      border-radius: 6px 0 0 6px;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    #right-button {
+      margin-left: -3px;
+      border: 3px black solid;
+      border-left: 0;
+      border-radius: 0 6px 6px 0;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      grid-column-start: 3;
+      grid-column-end: 3;
+    }
+
+    #up-button {
+      margin-bottom: -3px;
+      border: 3px black solid;
+      border-bottom: 0;
+      border-radius: 6px 6px 0 0;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 2;
+      grid-column-end: 2;
+    }
+
+    #down-button {
+      margin-top: -3px;
+      border: 3px black solid;
+      border-top: 0;
+      border-radius: 0 0 6px 6px;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 2;
+    }
+  </style>
+  <div id="dpad-container">
+    <span id="left-button"></span>
+    <span id="right-button"></span>
+    <span id="up-button"></span>
+    <span id="down-button"></span>
+  </div>
+  <span id="start-button"></span>
+  <span id="select-button"></span>
+
+  <span id="a-button"></span>
+  <span id="b-button"></span>
+</html>
